@@ -1,0 +1,126 @@
+/* Allgemeine Stile */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+}
+
+/* Karten-Stil */
+.card {
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Eingabefelder */
+.input {
+    width: calc(100% - 20px);
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+/* Buttons */
+.btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #218838;
+    transform: scale(1.02);
+}
+
+/* Ziehungs-Button */
+.draw-btn {
+    background-color: #007bff;
+}
+
+.draw-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Teilnehmerliste */
+#participants {
+    list-style-type: none;
+    padding: 0;
+}
+
+#participants li {
+    background-color: #e0e7ff;
+    color: #333;
+    margin: 8px 0;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+/* Ergebnis-Anzeige */
+#result h2 {
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 24px;
+}
+
+/* Ergebnis-Elemente */
+.result-item {
+    margin-bottom: 15px;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: #f8f9fa;
+}
+
+.result-item button {
+    background-color: #6c757d;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 8px 8px 0 0;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    text-align: left;
+}
+
+.result-item button:hover {
+    background-color: #5a6268;
+}
+
+.result-item p {
+    font-size: 20px;
+    color: #333;
+    padding: 20px;
+    background-color: #fff;
+    margin: 0;
+    border-radius: 0 0 12px 12px;
+    display: none;
+    transition: opacity 0.3s ease;
+}
